@@ -1,0 +1,87 @@
+/* Archivo styles.css */
+
+/* Ajustes generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin-top: 0px;
+    padding:0;
+    padding-bottom: 60px;
+}
+
+/* Estilo para el logo circular */
+img.rounded-circle {
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el nombre con fuente script */
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo del menú en la parte superior (en negro) */
+a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;  /* Tamaño de las opciones del menú */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff; /* Cambia de color al pasar el mouse */
+}
+
+/* Aumentar el tamaño de los iconos en un 50% más */
+.icon-size {
+    width: 100%;  /* Ocupar todo el ancho disponible en la tarjeta */
+    height: 350px;  /* Altura considerablemente más grande */
+    object-fit: contain;  /* Asegura que el icono mantenga su relación de aspecto */
+    padding: 10px;  /* Reducir el espacio en blanco alrededor del icono */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajustar el margen en la segunda fila */
+.col-md-6.mb-4 {
+    margin-bottom: 20px;  /* Reducir el margen inferior para las tarjetas en la segunda fila */
+}
+
+/* Estilo para los títulos del menú */
+h5.card-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    padding: 1rem 0;  /* Adjust padding to match the top menu */
+    border-top: 5px solid #fff;  /* Optional: thick border at the top of the footer */
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;  /* Hover effect */
+}
+
+/* Social links alignment */
+footer .navbar-nav .nav-item {
+    margin-left: 15px;  /* Add spacing between social links */
+}
+
