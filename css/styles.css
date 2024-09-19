@@ -1,18 +1,37 @@
-/* Archivo styles.css */
-
 /* Ajustes generales del cuerpo */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f7f7f7;
-    margin-top: 0px;
-    padding:0;
+    margin-top: 0;
+    padding: 0;
     padding-bottom: 60px;
+}
+
+/* Ajuste del margen izquierdo */
+.container {
+    max-width: 1600px;  /* Ajuste según el diseño que prefieras */
+    margin-left: 200px;  /* Pequeño margen en el lado izquierdo */
+    margin-right: auto; /* Mantener alineado el lado derecho */
+}
+
+/* Menú superior alineado a la derecha */
+.container-fluid .row .col-md-6.text-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap; /* Evitar que el menú se divida en varias líneas */
+}
+
+.container-fluid .row .col-md-6.text-end a {
+    margin-left: 20px;  /* Separación entre los enlaces */
+    white-space: nowrap; /* Evitar que el texto se divida en líneas múltiples */
 }
 
 /* Estilo para el logo circular */
 img.rounded-circle {
     border: 2px solid #fff;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;  /* Espacio entre el logo y el texto */
 }
 
 /* Estilo para el nombre con fuente script */
@@ -21,27 +40,84 @@ h1 {
     font-size: 3.5rem;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    white-space: nowrap; /* Mantener el texto en una sola línea */
 }
 
-/* Estilo del menú en la parte superior (en negro) */
+/* Estilo de los enlaces del menú */
 a {
     color: white;
     font-weight: bold;
-    font-size: 1.1rem;  /* Tamaño de las opciones del menú */
+    font-size: 1.1rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #007bff; /* Cambia de color al pasar el mouse */
+    color: #007bff; /* Cambiar de color al pasar el mouse */
 }
 
-/* Aumentar el tamaño de los iconos en un 50% más */
-.icon-size {
-    width: 100%;  /* Ocupar todo el ancho disponible en la tarjeta */
-    height: 350px;  /* Altura considerablemente más grande */
-    object-fit: contain;  /* Asegura que el icono mantenga su relación de aspecto */
-    padding: 10px;  /* Reducir el espacio en blanco alrededor del icono */
+/* Imagen de perfil */
+.profile-img {
+    width: 80%;  /* Ocupa el 80% del contenedor */
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #000;  /* Enmarcar la imagen */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Sombra */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilo del contenedor de la imagen e íconos de contacto */
+.profile-section {
+    width: 330px; /* Ancho del contenedor de la imagen */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alineación vertical centrada */
+    align-items: center; /* Alineación horizontal centrada */
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Enmarcar la sección */
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+/* Texto "Contact Me" */
+.contact-links h5 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para los íconos de contacto */
+.contact-links {
+    display: flex;  /* Alineación en fila */
+    justify-content: center;  /* Centramos los íconos */
+    margin-top: 15px;
+}
+
+.contact-icon {
+    font-size: 2rem;  /* Íconos más grandes */
+    color: #000;
+    margin: 0 15px;  /* Espacio entre los íconos */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+    color: #007bff;
+}
+
+/* Ajustes para centrar y hacer más grandes las imágenes en las tarjetas */
+.card-img-top {
+    width: calc(100% - 4mm); /* Hacer que la imagen ocupe casi todo el espacio disponible menos 2mm de margen por lado */
+    height: auto; /* Mantener la proporción de la imagen */
+    object-fit: contain; /* Asegurar que la imagen mantenga su proporción */
+    display: block; /* Asegurar que sea un bloque para centrarlo */
+    margin: 2mm auto 0; /* Añadir 2mm de margen superior y centrar horizontalmente */
+    padding: 0; /* Remover cualquier padding extra */
 }
 
 .card {
@@ -53,22 +129,10 @@ a:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Ajustar el margen en la segunda fila */
-.col-md-6.mb-4 {
-    margin-bottom: 20px;  /* Reducir el margen inferior para las tarjetas en la segunda fila */
-}
-
-/* Estilo para los títulos del menú */
-h5.card-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
 /* Footer styles */
 footer {
-    padding: 1rem 0;  /* Adjust padding to match the top menu */
-    border-top: 5px solid #fff;  /* Optional: thick border at the top of the footer */
+    padding: 1rem 0;
+    border-top: 5px solid #fff;
 }
 
 footer a {
@@ -77,11 +141,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #007bff;  /* Hover effect */
+    color: #007bff;
 }
-
-/* Social links alignment */
-footer .navbar-nav .nav-item {
-    margin-left: 15px;  /* Add spacing between social links */
-}
-
