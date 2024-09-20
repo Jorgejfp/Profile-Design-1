@@ -14,120 +14,113 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Barra superior con logo y menú -->
-    <div class="container-fluid bg-dark text-white py-3">
-        <div class="row align-items-center">
-            <div class="col-md-6 d-flex align-items-center">
-                <img src="img/logo.png" alt="Logo" class="rounded-circle" width="60" height="60">
-                <h1 class="ms-3" style="font-family: 'Great Vibes', cursive; color: white;">Jorge Flores P.</h1>
-            </div>
-            <div class="col-md-6 text-end">
-                <a href="index.html" class="text-white mx-3">Accueil</a>
-                <a href="education.html" class="text-white mx-3">Formation</a>
-                <a href="experience.html" class="text-white mx-3">Experience</a>
-                <a href="skills.html" class="text-white mx-3">Compétences</a>
-                <a href="portafolio.html" class="text-white mx-3">Portefeuille</a>
-                <a href="contact.html" class="text-white mx-3">Contact</a>
+    <!-- Contenedor Principal -->
+    <div class="container-main">
+        <!-- Barra superior con logo y menú -->
+        <div class="container-fluid bg-dark text-white py-3">
+            <div class="row align-items-center">
+                <div class="col-md-6 d-flex align-items-center">
+                    <img src="img/logo.png" alt="Logo" class="rounded-circle" width="60" height="60">
+                    <h1 class="ms-3" style="font-family: 'Great Vibes', cursive; color: white;">Jorge Flores P.</h1>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="index.html" class="text-white mx-3">Accueil</a>
+                    <a href="education.html" class="text-white mx-3">Formation</a>
+                    <a href="experience.html" class="text-white mx-3">Experience</a>
+                    <a href="skills.html" class="text-white mx-3">Compétences</a>
+                    <a href="portafolio.html" class="text-white mx-3">Portefeuille</a>
+                    <a href="contact.html" class="text-white mx-3">Contact</a>
+                </div>
             </div>
         </div>
+
+        <!-- Contenido Principal -->
+        <div class="content">
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- Contenido principal centrado -->
+                    <div class="col-md-9">
+                        <div class="text-center">
+                            <h2>Bienvenue dans mon portefeuille en tant qu’analyste de données et développeur en formation</h2>
+                            <p class="lead">Je suis diplômé du programme de programmation et d'analyse informatique AEC du Collège LaSalle. Je suis à la recherche d’une occasion de faire mon stage professionnel, où je peux appliquer et étendre les compétences et les connaissances acquises tout au long de ma formation universitaire. J’ai des connaissances en programmation, gestion et comptabilité. En outre, je me distingue par ma capacité à gérer le temps de manière efficace, mon organisation, ma responsabilité, et ma capacité à m’adapter et à collaborer efficacement en équipe.</p>
+                        </div>
+                        <!-- Sección principal con iconos (Formation, Experience, Skills, Portafolio) -->
+                        <div class="row justify-content-center text-center">
+                            <div class="col-md-3 mb-4">
+                                <div class="card shadow-sm">
+                                    <img src="img/Formation.png" class="card-img-top icon-size" alt="Formation">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Formation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card shadow-sm">
+                                    <img src="img/Experience.png" class="card-img-top icon-size" alt="Experience">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Experience</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 mb-4">
+                                <div class="card shadow-sm">
+                                    <img src="img/Skills.png" class="card-img-top icon-size" alt="Skills">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Compétences</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Portafolio en la misma fila que Skills -->
+                            <div class="col-md-3 mb-4">
+                                <div class="card shadow-sm">
+                                    <img src="img/Portafolio.png" class="card-img-top icon-size" alt="Portafolio">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Portefeuille</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Imagen de perfil e íconos de contacto al lado derecho -->
+                    <div class="col-md-3">
+                        <div class="profile-section">
+                            <img src="img/JJFP_PUCP.jpg" alt="Jorge Flores Perez" class="profile-img mb-3">
+                            <h5>Contactez-moi</h5>
+                            <div class="contact-links">
+                                <!-- LinkedIn -->
+                                <a href="https://www.linkedin.com/in/jjfp" target="_blank" class="contact-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <!-- Email -->
+                                <a href="mailto:jorgejfp@hotmail.com" class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                                <!-- ORCID -->
+                                <a href="https://orcid.org/0000-0002-1140-8074" target="_blank" class="contact-icon">
+                                    <i class="fab fa-orcid"></i>
+                                </a>
+                                <!-- GitHub -->
+                                <a href="https://github.com/jorgejfp" target="_blank" class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center p-4">
+            <p>&copy; 2024 Jorge Flores Perez | <a href="mailto:jorgejfp@hotmail.com" class="text-white">Me Contacter</a></p>
+            <div class="d-flex justify-content-center">
+                <a href="https://www.linkedin.com/in/jjfp" class="mx-2 text-white">LinkedIn</a>
+                <a href="https://github.com/jorgejfp" class="mx-2 text-white">GitHub</a>
+                <a href="https://orcid.org/0000-0002-1140-8074" class="mx-2 text-white">ORCID</a>
+            </div>
+        </footer>
     </div>
-    <!-- Contenido principal con imagen de perfil e iconos a la derecha -->
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Contenido principal centrado -->
-            <div class="col-md-9">
-                <div class="text-center">
-                    <h2>Bienvenue dans mon portefeuille en tant qu’analyste de données et développeur en formation</h2>
-                    <p class="lead">Je suis diplômé du programme de programmation et d'analyse informatique AEC du Collège LaSalle. Je suis à la recherche d’une occasion de faire mon stage professionnel, où je peux appliquer et étendre les compétences et les connaissances acquises tout au long de ma formation universitaire. J’ai des connaissances en programmation, gestion et comptabilité. En outre, je me distingue par ma capacité à gérer le temps de manière efficace, mon organisation, ma responsabilité, et ma capacité à m’adapter et à collaborer efficacement en équipe.</p>
-                </div>
-                <!-- Sección principal con iconos (Formation, Experience, Skills, Portafolio) -->
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-3 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/Formation.png" class="card-img-top icon-size" alt="Formation">
-                            <div class="card-body">
-                                <h5 class="card-title">Formation</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/Experience.png" class="card-img-top icon-size" alt="Experience">
-                            <div class="card-body">
-                                <h5 class="card-title">Experience</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/Skills.png" class="card-img-top icon-size" alt="Skills">
-                            <div class="card-body">
-                                <h5 class="card-title">Compétences</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Portafolio en la misma fila que Skills -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card shadow-sm">
-                            <img src="img/Portafolio.png" class="card-img-top icon-size" alt="Portafolio">
-                            <div class="card-body">
-                                <h5 class="card-title">Portefeuille</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagen de perfil e íconos de contacto al lado derecho -->
-            <div class="col-md-3">
-                <div class="profile-section">
-                    <img src="img/JJFP_PUCP.jpg" alt="Jorge Flores Perez" class="profile-img mb-3">
-                    <h5>Contactez-moi</h5>
-                    <div class="contact-links">
-                        <!-- LinkedIn -->
-                        <a href="https://www.linkedin.com/in/jjfp" target="_blank" class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <!-- Email -->
-                        <a href="mailto:jorgejfp@hotmail.com" class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                        <!-- ORCID -->
-                        <a href="https://orcid.org/0000-0002-1140-8074" target="_blank" class="contact-icon">
-                            <i class="fab fa-orcid"></i>
-                        </a>
-                        <!-- GitHub (nuevo) -->
-                        <a href="https://github.com/jorgejfp" target="_blank" class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer -->
-    <footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
-        <div class="container-fluid">
-            <!-- Left side: Copyright info -->
-            <div class="navbar-brand">
-                &copy; 2024 Jorge Flores Perez | 
-                <a href="mailto:jorgejfp@hotmail.com" class="text-white">Me Contacter</a>
-            </div>
-            <!-- Right side: Social media links -->
-            <div class="d-flex justify-content-end">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a href="https://www.linkedin.com/in/jjfp" class="nav-link text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://github.com/jorgejfp" class="nav-link text-white"><i class="fab fa-github"></i> GitHub</a>
-                    </li>
-                    <li class="nav-item"></li>
-                        <a href="https://orcid.org/0000-0002-1140-8074" class="nav-link text-white"><i class="fab fa-orcid"></i> ORCID</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

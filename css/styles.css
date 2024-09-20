@@ -1,89 +1,50 @@
-/* Ajustes generales del cuerpo */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
-    margin-top: 0;
+/* Asegurar que el body ocupe toda la altura disponible */
+html, body {
+    height: 100%; /* Esto garantiza que la página ocupe el 100% de la ventana del navegador */
+    margin: 0;
     padding: 0;
-    padding-bottom: 60px;
 }
 
-/* Ajuste del margen izquierdo */
-.container {
-    max-width: 1600px;  /* Ajuste según el diseño que prefieras */
-    margin-left: 200px;  /* Pequeño margen en el lado izquierdo */
-    margin-right: auto; /* Mantener alineado el lado derecho */
-}
-
-/* Menú superior alineado a la derecha */
-.container-fluid .row .col-md-6.text-end {
+/* Contenedor principal que envuelve todo el contenido */
+.container-main {
+    min-height: 100vh; /* 100% de la altura de la ventana del navegador */
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: nowrap; /* Evitar que el menú se divida en varias líneas */
+    flex-direction: column;
 }
 
-.container-fluid .row .col-md-6.text-end a {
-    margin-left: 20px;  /* Separación entre los enlaces */
-    white-space: nowrap; /* Evitar que el texto se divida en líneas múltiples */
-}
-
-/* Estilo para el logo circular */
-img.rounded-circle {
-    border: 2px solid #fff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin-right: 15px;  /* Espacio entre el logo y el texto */
-}
-
-/* Estilo para el nombre con fuente script */
-h1 {
-    font-family: 'Great Vibes', cursive;
-    font-size: 3.5rem;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    white-space: nowrap; /* Mantener el texto en una sola línea */
-}
-
-/* Estilo de los enlaces del menú */
-a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #007bff; /* Cambiar de color al pasar el mouse */
+/* Asegurar que el contenido ocupe todo el espacio disponible, empujando el footer hacia abajo */
+.content {
+    flex: 1; /* Hace que el contenido se expanda para ocupar el espacio disponible */
 }
 
 /* Imagen de perfil */
 .profile-img {
     width: 80%;  /* Ocupa el 80% del contenedor */
     height: auto;
-    border-radius: 50%;
-    border: 5px solid #000;  /* Enmarcar la imagen */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Sombra */
+    border-radius: 50%;  /* Hace la imagen circular */
+    border: 5px solid #000;  /* Enmarcar la imagen con un borde */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Sombra alrededor de la imagen */
     display: block;
     margin: 0 auto;
 }
 
 /* Estilo del contenedor de la imagen e íconos de contacto */
 .profile-section {
-    width: 330px; /* Ancho del contenedor de la imagen */
+    width: 440px; /* Ancho del contenedor de la imagen */
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Alineación vertical centrada */
     align-items: center; /* Alineación horizontal centrada */
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Enmarcar la sección */
     background-color: #fff;
-    border-radius: 15px;
-    margin: 20px auto;
+    border-radius: 15px;  /* Bordes redondeados para el contenedor */
+    margin: 20px auto;  /* Centrar el contenedor */
 }
 
-/* Texto "Contact Me" */
+/* Texto "Contactez-moi" */
 .contact-links h5 {
     margin-top: 20px;
     font-size: 1.5rem;
@@ -93,8 +54,8 @@ a:hover {
 
 /* Estilos para los íconos de contacto */
 .contact-links {
-    display: flex;  /* Alineación en fila */
-    justify-content: center;  /* Centramos los íconos */
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
 }
 
@@ -110,33 +71,20 @@ a:hover {
     color: #007bff;
 }
 
-/* Ajustes para centrar y hacer más grandes las imágenes en las tarjetas */
-.card-img-top {
-    width: calc(100% - 4mm); /* Hacer que la imagen ocupe casi todo el espacio disponible menos 2mm de margen por lado */
-    height: auto; /* Mantener la proporción de la imagen */
-    object-fit: contain; /* Asegurar que la imagen mantenga su proporción */
-    display: block; /* Asegurar que sea un bloque para centrarlo */
-    margin: 2mm auto 0; /* Añadir 2mm de margen superior y centrar horizontalmente */
-    padding: 0; /* Remover cualquier padding extra */
-}
 
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer styles */
+/* Estilos del Footer */
 footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
     padding: 1rem 0;
+    position: relative; /* Cambia a relative para no estar fijo en la pantalla */
     border-top: 5px solid #fff;
 }
 
 footer a {
-    color: #ffffff;
+    color: white;
     text-decoration: none;
 }
 
