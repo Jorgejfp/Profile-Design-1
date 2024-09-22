@@ -1,93 +1,87 @@
-/* Asegurar que el body ocupe toda la altura disponible */
+/* Configuración básica para prevenir desbordamientos */
 html, body {
-    height: 100%; /* Esto garantiza que la página ocupe el 100% de la ventana del navegador */
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevenir desbordamiento horizontal y vertical */
 }
 
-/* Contenedor principal que envuelve todo el contenido */
-.container-main {
-    min-height: 100vh; /* 100% de la altura de la ventana del navegador */
+body {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #000;
 }
 
-/* Asegurar que el contenido ocupe todo el espacio disponible, empujando el footer hacia abajo */
-.content {
-    flex: 1; /* Hace que el contenido se expanda para ocupar el espacio disponible */
+/* Header fijo en la parte superior */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 60px; /* Ajustamos la altura del header */
 }
 
-/* Imagen de perfil */
-.profile-img {
-    width: 80%;  /* Ocupa el 80% del contenedor */
-    height: auto;
-    border-radius: 50%;  /* Hace la imagen circular */
-    border: 5px solid #000;  /* Enmarcar la imagen con un borde */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);  /* Sombra alrededor de la imagen */
-    display: block;
-    margin: 0 auto;
-}
-
-/* Estilo del contenedor de la imagen e íconos de contacto */
-.profile-section {
-    width: 440px; /* Ancho del contenedor de la imagen */
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alineación vertical centrada */
-    align-items: center; /* Alineación horizontal centrada */
-    text-align: center;
-    padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);  /* Enmarcar la sección */
-    background-color: #fff;
-    border-radius: 15px;  /* Bordes redondeados para el contenedor */
-    margin: 20px auto;  /* Centrar el contenedor */
-}
-
-/* Texto "Contactez-moi" */
-.contact-links h5 {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #333;
-    text-align: center;
-}
-
-/* Estilos para los íconos de contacto */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.contact-icon {
-    font-size: 2rem;  /* Íconos más grandes */
-    color: #000;
-    margin: 0 15px;  /* Espacio entre los íconos */
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.contact-icon:hover {
-    transform: scale(1.2);
-    color: #007bff;
-}
-
-
-/* Estilos del Footer */
+/* Footer fijo en la parte inferior */
 footer {
     width: 100%;
-    background-color: #333;
-    color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    background-color: #000;
+    height: 100px; /* Altura del footer ajustada */
     text-align: center;
-    padding: 1rem 0;
-    position: relative; /* Cambia a relative para no estar fijo en la pantalla */
-    border-top: 5px solid #fff;
-}
-
-footer a {
     color: white;
-    text-decoration: none;
+    line-height: 30px; /* Asegura que el texto esté centrado verticalmente */
 }
 
-footer a:hover {
-    color: #007bff;
+/* Fondo con el GIF ajustado al ancho y evitando desbordes */
+.content {
+    flex: 1;
+    position: relative; /* Para poder agregar la capa de superposición */
+    background: url('../img/ondas-animadas.gif') no-repeat center center fixed;
+    background-size: 100% 83%; /* El GIF se ajustará dentro del contenedor sin desbordar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px; /* Espacio para el header */
+    padding-bottom: 60px; /* Espacio para el footer */
+    box-sizing: border-box; /* Prevenir desbordamiento por padding */
+    height: calc(100vh - 120px); /* Ajustar el contenido para que no exceda el espacio entre header y footer */
+}
+
+/* Capa de superposición para transparencia */
+.content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Capa de superposición con un 20% de transparencia */
+    z-index: 1; /* Colocamos la capa debajo del contenido */
+}
+
+/* Sección principal */
+#home {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 2; /* Colocamos el contenido por encima de la capa de superposición */
+}
+
+.home-title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-top: 1rem;
 }

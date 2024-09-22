@@ -3,123 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Jorge Flores</title>
+    <meta name="description" content="Portfolio professionnel de Jorge Flores Perez, analyste de données et développeur en formation.">
+    <title>Portfolio de Jorge Flores</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-    <!-- Google Font for Script Style -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Contenedor Principal -->
-    <div class="container-main">
-        <!-- Barra superior con logo y menú -->
-        <div class="container-fluid bg-dark text-white py-3">
-            <div class="row align-items-center">
-                <div class="col-md-6 d-flex align-items-center">
-                    <img src="img/logo.png" alt="Logo" class="rounded-circle" width="60" height="60">
-                    <h1 class="ms-3" style="font-family: 'Great Vibes', cursive; color: white;">Jorge Flores P.</h1>
+
+    <!-- Header fijo -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="img/logo.png" alt="Logo" class="rounded-circle" width="50" height="50">
+                    <span style="font-family: 'Great Vibes', cursive; font-size: 1.5rem; color: white;">Jorge Flores P.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formation"><i class="fas fa-graduation-cap"></i>Formation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i>Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills"><i class="fas fa-lightbulb"></i>Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio"><i class="fas fa-folder-open"></i>Portefeuille</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i>Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-md-6 text-end">
-                    <a href="index.html" class="text-white mx-3">Accueil</a>
-                    <a href="education.html" class="text-white mx-3">Formation</a>
-                    <a href="experience.html" class="text-white mx-3">Experience</a>
-                    <a href="skills.html" class="text-white mx-3">Compétences</a>
-                    <a href="portafolio.html" class="text-white mx-3">Portefeuille</a>
-                    <a href="contact.html" class="text-white mx-3">Contact</a>
-                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content con el GIF de fondo -->
+    <main class="content">
+        <!-- Sección de inicio -->
+        <section id="home" class="d-flex justify-content-center align-items-center text-white">
+            <div class="text-center">
+                <h1 class="home-title">Jorge Flores Perez</h1>
+                <p class="lead">Développeur en formation | Analyste de données</p>
+                <a href="#about" class="btn btn-outline-light mt-4">En savoir plus</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer fijo -->
+    <footer class="bg-dark text-white">
+        <div class="container text-center">
+            <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2">LinkedIn</a>
+                <a href="https://github.com/jorgejfp" class="text-white mx-2">GitHub</a>
+                <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2">ORCID</a>
             </div>
         </div>
-
-        <!-- Contenido Principal -->
-        <div class="content">
-            <div class="container mt-5">
-                <div class="row">
-                    <!-- Contenido principal centrado -->
-                    <div class="col-md-9">
-                        <div class="text-center">
-                            <h2>Bienvenue dans mon portefeuille en tant qu’analyste de données et développeur en formation</h2>
-                            <p class="lead">Je suis diplômé du programme de programmation et d'analyse informatique AEC du Collège LaSalle. Je suis à la recherche d’une occasion de faire mon stage professionnel, où je peux appliquer et étendre les compétences et les connaissances acquises tout au long de ma formation universitaire. J’ai des connaissances en programmation, gestion et comptabilité. En outre, je me distingue par ma capacité à gérer le temps de manière efficace, mon organisation, ma responsabilité, et ma capacité à m’adapter et à collaborer efficacement en équipe.</p>
-                        </div>
-                        <!-- Sección principal con iconos (Formation, Experience, Skills, Portafolio) -->
-                        <div class="row justify-content-center text-center">
-                            <div class="col-md-3 mb-4">
-                                <div class="card shadow-sm">
-                                    <img src="img/Formation.png" class="card-img-top icon-size" alt="Formation">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Formation</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-4">
-                                <div class="card shadow-sm">
-                                    <img src="img/Experience.png" class="card-img-top icon-size" alt="Experience">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Experience</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3 mb-4">
-                                <div class="card shadow-sm">
-                                    <img src="img/Skills.png" class="card-img-top icon-size" alt="Skills">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Compétences</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Portafolio en la misma fila que Skills -->
-                            <div class="col-md-3 mb-4">
-                                <div class="card shadow-sm">
-                                    <img src="img/Portafolio.png" class="card-img-top icon-size" alt="Portafolio">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Portefeuille</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Imagen de perfil e íconos de contacto al lado derecho -->
-                    <div class="col-md-3">
-                        <div class="profile-section">
-                            <img src="img/JJFP_PUCP.jpg" alt="Jorge Flores Perez" class="profile-img mb-3">
-                            <h5>Contactez-moi</h5>
-                            <div class="contact-links">
-                                <!-- LinkedIn -->
-                                <a href="https://www.linkedin.com/in/jjfp" target="_blank" class="contact-icon">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <!-- Email -->
-                                <a href="mailto:jorgejfp@hotmail.com" class="contact-icon">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                                <!-- ORCID -->
-                                <a href="https://orcid.org/0000-0002-1140-8074" target="_blank" class="contact-icon">
-                                    <i class="fab fa-orcid"></i>
-                                </a>
-                                <!-- GitHub -->
-                                <a href="https://github.com/jorgejfp" target="_blank" class="contact-icon">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="bg-dark text-white text-center p-4">
-            <p>&copy; 2024 Jorge Flores Perez | <a href="mailto:jorgejfp@hotmail.com" class="text-white">Me Contacter</a></p>
-            <div class="d-flex justify-content-center">
-                <a href="https://www.linkedin.com/in/jjfp" class="mx-2 text-white">LinkedIn</a>
-                <a href="https://github.com/jorgejfp" class="mx-2 text-white">GitHub</a>
-                <a href="https://orcid.org/0000-0002-1140-8074" class="mx-2 text-white">ORCID</a>
-            </div>
-        </footer>
-    </div>
+    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
