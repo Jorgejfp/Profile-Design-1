@@ -3,7 +3,8 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Prevenir desbordamiento horizontal y vertical */
+    overflow-x: hidden; /* Prevenir desbordamiento horizontal y vertical */
+    overflow-y: auto;
 }
 
 body {
@@ -56,9 +57,10 @@ footer {
     justify-content: center;
     align-items: center;
     padding-top: 60px; /* Espacio para el header */
-    padding-bottom: 60px; /* Espacio para el footer */
+    padding-bottom: 100px; /* Espacio para el footer */
     box-sizing: border-box; /* Prevenir desbordamiento por padding */
     height: calc(100vh - 120px); /* Ajustar el contenido para que no exceda el espacio entre header y footer */
+    min-height: 100vh;
 }
 
 /* Capa de superposición para transparencia */

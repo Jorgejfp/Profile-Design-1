@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/styles.css">
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <!-- Mantener el header como en la página principal con los íconos -->
@@ -29,7 +28,6 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <!-- Uso de los mismos íconos del index -->
                         <li class="nav-item">
                             <a class="nav-link" href="formation.html" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Formation">
                                 <img src="img/Formation_ico.png" alt="Formation" width="50" height="50">
@@ -62,7 +60,7 @@
     </header>
 
     <!-- Main content -->
-    <main class="content">
+    <main class="content" style="padding-top: 80px;">
         <table border="0" style="width: 100%;">
             <!-- Fila 1: Texto de À propos de moi -->
             <tr>
@@ -84,10 +82,10 @@
             <tr>
                 <td>
                     <section id="options" class="container my-5 text-white">
-                        <div class="row justify-content-center">
+                        <div class="row justify-content-center d-flex flex-wrap">
                             <!-- Cuadro Formation -->
-                            <div class="col-md-3 mb-4">
-                                <div class="card h-100 text-center bg-dark text-white">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                                <div class="card h-100 text-center bg-dark text-white" style="width: 100%;">
                                     <img src="img/Formation.png" class="card-img-top" alt="Formation">
                                     <div class="card-body">
                                         <h5 class="card-title">Formation</h5>
@@ -96,8 +94,8 @@
                                 </div>
                             </div>
                             <!-- Cuadro Experience -->
-                            <div class="col-md-3 mb-4">
-                                <div class="card h-100 text-center bg-dark text-white">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                                <div class="card h-100 text-center bg-dark text-white" style="width: 100%;">
                                     <img src="img/Experience.png" class="card-img-top" alt="Experience">
                                     <div class="card-body">
                                         <h5 class="card-title">Expérience</h5>
@@ -106,8 +104,8 @@
                                 </div>
                             </div>
                             <!-- Cuadro Compétences -->
-                            <div class="col-md-3 mb-4">
-                                <div class="card h-100 text-center bg-dark text-white">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                                <div class="card h-100 text-center bg-dark text-white" style="width: 100%;">
                                     <img src="img/Skills.png" class="card-img-top" alt="Compétences">
                                     <div class="card-body">
                                         <h5 class="card-title">Compétences</h5>
@@ -116,8 +114,8 @@
                                 </div>
                             </div>
                             <!-- Cuadro Portefeuille -->
-                            <div class="col-md-3 mb-4">
-                                <div class="card h-100 text-center bg-dark text-white">
+                            <div class="col-12 col-md-6 col-lg-3 mb-4 d-flex justify-content-center">
+                                <div class="card h-100 text-center bg-dark text-white" style="width: 100%;">
                                     <img src="img/Portafolio.png" class="card-img-top" alt="Portefeuille">
                                     <div class="card-body">
                                         <h5 class="card-title">Portefeuille</h5>
@@ -132,27 +130,23 @@
         </table>       
     </main>
 
-    <!-- Mantener el footer como en la página principal -->
+    <!-- Footer -->
     <footer class="footer bg-dark text-white py-3">
         <div class="container text-center">
             <p>&copy; 2024 Jorge Flores Perez. Tous droits réservés.</p>
             <div>
-                <!-- Ícono de LinkedIn -->
                 <a href="https://www.linkedin.com/in/jjfp" class="text-white mx-2" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- Ícono de GitHub -->
                 <a href="https://github.com/jorgejfp" class="text-white mx-2" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
-                <!-- Ícono de ORCID -->
                 <a href="https://orcid.org/0000-0002-1140-8074" class="text-white mx-2" aria-label="ORCID">
                     <i class="fab fa-orcid"></i>
                 </a>
             </div>
         </div>
     </footer>
-    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
