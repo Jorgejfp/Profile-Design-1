@@ -1,5 +1,5 @@
 # CV en Ligne - Jorge Flores Perez
-![Descripción de la Imagen](https://github.com/jorgejfp/git-page/blob/main/image.webp?raw=true)
+![Descripción de la Imagen](https://github.com/jorgejfp/git-page/blob/main/image.png?raw=true)
 
 
 Ce projet est un site web personnel présentant mon curriculum vitae. Il a été construit en utilisant HTML, CSS, Bootstrap, et JavaScript.
